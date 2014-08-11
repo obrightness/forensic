@@ -1,0 +1,40 @@
+GET /adiframe/3.0/5113.1/221794/0/-1/size=120x90;noperf=1;alias=93245558;cfp=1;noaddonpl=y;artexc=all;artinc=art_image%2Cart_img1x1%2Cart_3pimg%2Cart_text%2Cart_imgtrack;kvmn=93245558;target=_blank;aduho=360;grp=143115875;misc=143115875 HTTP/1.1
+Accept: */*
+Referer: http://www.aim.com/redirects/inclient/AIM_UAC_v2.adp?magic=93245558&width=120&height=90&sn=Sec558user1
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+Host: at.atwola.com
+Connection: Keep-Alive
+Cookie: JEB2=4A839DDB6E65181C45921CB2F00016D8; ATTACID=a3Z0aWQ9MTU4NzdpYTAwYTh2Ymk=; ATTAC=a3ZzZWc9OTk5OTk6NTAyODA=; badsrfi=V0d710994e8ccb8db64a83a07939b2; atdemo=a3ZhZz1hbTM6dWEzOTtrdnVnPTE7; AxData=; atdses=0
+
+HTTP/1.0 200 OK
+Content-Type: text/html
+Content-Length: 375
+X-Cache: MISS from www-proxy.sec558.com
+X-Cache-Lookup: MISS from www-proxy.sec558.com:3128
+Via: 1.0 www-proxy.sec558.com:3128 (squid/2.6.STABLE18)
+Connection: keep-alive
+
+<html><body><base target=_blank><script language="JavaScript" type="text/javascript" src="http://at.atwola.com/addyn/3.0/5113.1/221794/0/-1/size=120x90;noperf=1;alias=93245558;cfp=1;noaddonpl=y;artexc=all;artinc=art_image%2Cart_img1x1%2Cart_3pimg%2Cart_text%2Cart_imgtrack;kvmn=93245558;target=_blank;aduho=360;grp=143115875;misc=143115875;adiframe=y"></script></body></html>GET /addyn/3.0/5113.1/221794/0/-1/size=120x90;noperf=1;alias=93245558;cfp=1;noaddonpl=y;artexc=all;artinc=art_image%2Cart_img1x1%2Cart_3pimg%2Cart_text%2Cart_imgtrack;kvmn=93245558;target=_blank;aduho=360;grp=143115875;misc=143115875;adiframe=y HTTP/1.1
+Accept: */*
+Referer: http://at.atwola.com/adiframe/3.0/5113.1/221794/0/-1/size=120x90;noperf=1;alias=93245558;cfp=1;noaddonpl=y;artexc=all;artinc=art_image%2Cart_img1x1%2Cart_3pimg%2Cart_text%2Cart_imgtrack;kvmn=93245558;target=_blank;aduho=360;grp=143115875;misc=143115875
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+Host: at.atwola.com
+Connection: Keep-Alive
+Cookie: JEB2=4A839DDB6E65181C45921CB2F00016D8; ATTACID=a3Z0aWQ9MTU4NzdpYTAwYTh2Ymk=; ATTAC=a3ZzZWc9OTk5OTk6NTAyODA=; badsrfi=V0d710994e8ccb8db64a83a07939b2; atdemo=a3ZhZz1hbTM6dWEzOTtrdnVnPTE7; AxData=; atdses=0
+
+HTTP/1.0 200 OK
+Server: Adtech Adserver
+Cache-Control: no-cache
+Content-Type: application/x-javascript
+Content-Length: 335
+X-Cache: MISS from www-proxy.sec558.com
+X-Cache-Lookup: MISS from www-proxy.sec558.com:3128
+Via: 1.0 www-proxy.sec558.com:3128 (squid/2.6.STABLE18)
+Connection: keep-alive
+
+document.write('<a href="http://at.atwola.com/?adlink/5113/395191/0/5/AdId=51190;BnId=18;itime=143116958;kvmn=93245558;kvtid=15877ia00a8vbi;kvseg=99999:50280;kvag=am3:ua39;kvug=1;" target=_blank><img src="http://aka-cdn-ns.adtechus.com/images/327/Ad0St1Sz5Sq0V1Id763207.gif" border=0 alt="Advertisement" width=120 height=90></a>');
+  

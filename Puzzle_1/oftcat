@@ -1,0 +1,401 @@
+#!/usr/bin/perl
+#################################################################################################
+#              oftcat 
+#################################################################################################
+# This script reads an OFT package, which is a package created by AIM when sending files over
+# the network (using the oscar file transfer protocol)
+#
+# OFT stands for Oscar File Transfer and it's structure can be read out by examining the C code
+# for tools like Gaim or Pidgin.
+#
+# The files that I used to construct this parser are to be found in the source file for Pidgin
+# 2.5.8, in the following folder:
+# 	pidgin-2.5.8/libpurple/protocols/oscar/
+#
+# Mainly the oft.c file and other supporting files.
+#
+# The script reads the packet, prints out some information about it and saves the captured file
+#
+# Author: Kristinn Gudjonsson
+# Version : 0.2b
+# Date : 18/08/09
+#
+# Copyright 2009 Kristinn Gudjonsson (kristinn ( a t ) log2timeline (d o t) net)
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+use strict;
+use Getopt::Long; # read parameters
+use Pod::Usage;
+
+my $version = "0.2b";
+
+my $file;
+my $temp;
+
+# variables found inside header
+my %header;
+my $ofs;
+my $tag;
+my $name;
+my $magic;
+
+my $out;
+my $show_version;
+my $print_help;
+
+# define the flags
+my %flags = (
+	0x0001	=> 'PEER_CONNECTION_FLAG_INITIATED_BY_ME',
+	0x0002  => 'PEER_CONNECTION_FLAG_APPROVED',
+	0x0004	=> 'PEER_CONNECTION_FLAG_TRIED_DIRECT',
+	0x0008	=> 'PEER_CONNECTION_FLAG_TRIED_INCOMING',
+	0x0010	=> 'PEER_CONNECTION_FLAG_TRIED_PROXY',
+	0x0020	=> 'PEER_CONNECTION_FLAG_IS_INCOMING' );
+
+# define different types of transfer
+my %types = (
+	0x0101 	=> 'PEER_TYPE_PROMPT',  	# "I am going to send you this file, is that ok?" */
+	0x0106	=> 'PEER_TYPE_RESUMEACCEPT',	# We are accepting the resume */
+	0x0202	=> 'PEER_TYPE_ACK',		# /* "Yes, it is ok for you to send me that file" */
+	0x0204	=> 'PEER_TYPE_DONE',		# /* "I received that file with no problems, thanks a bunch" */
+	0x0205	=> 'PEER_TYPE_RESUME',		# /* Resume transferring, sent by whoever receives */
+	0x0207	=> 'PEER_TYPE_RESUMEACK',	# /* Our resume accept was ACKed */
+	0x1108	=> 'PEER_TYPE_GETFILE_REQUESTLISTING',	# /* "I have a listing.txt file, do you want it?" */
+	0x1209	=> 'PEER_TYPE_GETFILE_RECEIVELISTING',	#  /* "Yes, please send me your listing.txt file" */
+	0x120a	=> 'PEER_TYPE_GETFILE_RECEIVEDLISTING',	# /* received corrupt listing.txt file? I'm just guessing about this one... */
+	0x120b	=> 'PEER_TYPE_GETFILE_ACKLISTING',	# /* "I received the listing.txt file successfully" */
+	0x120c	=> 'PEER_TYPE_GETFILE_REQUESTFILE'	# /* "Please send me this file" */
+);
+
+
+# read options
+GetOptions(
+        "read:s"=>\$file,
+        "write:s"=>\$out,
+        "version!"=>\$show_version,
+        "help|?!"=>\$print_help
+) or pod2usage( 2 );
+
+# check if we are asking for help
+pod2usage(1) if $print_help;
+
+# print versioning information
+show_version() if $show_version;
+
+if( ! -e $file )
+{
+	pod2usage( {
+		-message        => "Unable to read the file $file.  Does it exist?\nThe error message is: $@",
+		-verbose        => 1,
+		-exitval        => 12 } );
+}
+
+
+open(OFT, '<' . $file );
+binmode(OFT);
+
+# reset the offset
+$ofs = 0;
+
+# set the tag
+$tag = 1;
+
+# print a small header
+print '------------------------------------------------------------',"\n";
+print "\tFile name: $file\n\n";
+
+
+# read headers (could be few of them combined, most likely we have two headers here)
+while( $tag )
+{
+	# read the header value
+	$tag = 0 unless read_header();
+
+	# so that we do not continue if we've reached the end of the header section
+	next unless $tag;
+	
+	# read the name of the name tag
+	$name = readraw( 64 );
+
+	# print out the information 
+	print_header_info();
+
+}
+
+# if we want to override the name variable we can do that
+$out = $name unless defined $out;
+
+# check for output file
+open( OUT, '>' . $out ) || pod2usage( { -message => 'Unable to create output file ' . $out . ' enough permission?' . "\nError message: " . $@, -verbose => 1, -exitval => 1 } );;
+binmode( OUT );
+
+# now we are about to start parsing or carving out the actual file
+print "parsing file information\n";
+
+# now we need to carve the actual file out
+for( my $i=0; $i < $header{'size'} ; $i++)
+{
+	seek(OFT,$ofs,0);
+	read(OFT,$temp,1);
+	$ofs++;
+	print OUT $temp;
+}
+# close the out file
+close(OUT);
+
+# check if there is a final header (should be)
+print "Final header (after file transfer)\n";
+print_header_info() if read_header();
+
+# print out the info about saved file
+print "\n\nFile: $name saved in file $out\n";
+
+# close files
+close(OFT);
+
+################################################## END OF MAIN CODE MOVE ON TO FUNCTIONS ##################################################################
+
+# 	read8
+#
+# A small function to read one byte or eight bits from the file and return it
+# @return one byte of data
+sub read8
+{
+	seek(OFT,$ofs,0);
+	read(OFT,$temp,1);
+	$ofs++;
+	
+	return unpack("c", $temp );
+}
+
+#	readraw
+#
+# A small function to read x bytes from the OFT packet, as defined in a parameter
+# to the function
+#
+# @params	for_length	An integer indicating the number of bytes to read
+# @return	A concentrated string that contains x bytes (for_length many bytes)
+sub readraw
+{
+	my $for_length = shift;
+	my @l;
+
+	for( my $i=0 ; $i < $for_length; $i++ )
+	{
+		seek(OFT,$ofs,0);
+		read(OFT,$temp,1);
+	
+		push( @l, $temp );
+		$ofs++;
+	}
+
+	return join('',@l );
+}
+
+# 	read16
+#
+# A small function to read two bytes or 16 bits from the file and return it
+#
+# @return two bytes of data
+sub read16
+{
+	seek(OFT,$ofs,0);
+	read(OFT,$temp,2);
+	$ofs+=2;
+	
+	return unpack("n", $temp );
+	#return unpack("v", $temp );
+}
+
+# 	read32
+#
+# A small function to read four bytes or 32 bits from the file and return it
+#
+# @return four bytes of data
+sub read32
+{
+	seek(OFT,$ofs,0);
+	read(OFT,$temp,4);
+	$ofs += 4;
+	
+	return unpack("N", $temp );
+	#return unpack("V", $temp );
+}
+
+# show the version information
+sub show_version
+{
+	print $0, ' version ', $version , ' copyright 2009, Kristinn Gudjonsson', "\n";
+	exit 0;
+}
+
+#	read_header
+#
+# a simple function that reads the header according to the funcion:
+#	static void peer_oft_send(PeerConnection *conn, OftFrame *frame)
+# which is defined in the file oft.c inside the Pidgin source code for the 
+# Oscar protocol.
+# The function reads the header and assigns the values to he appropriate 
+# variables that are then read by print_header_info variable
+#
+# @return 0 if there isn't the correct magic value, 1 if we find the correct value
+sub read_header
+{
+	# read the magic value
+	$header{'magic'} = readraw( 4 );
+
+	# check for correct magic value
+	if( $header{'magic'} ne 'OFT2' )
+	{
+		# since we are not dealing with the correct header (the file itself)
+		# then we decrease the offset and return false
+		$ofs -= 4;
+		return 0;
+	}
+	
+	# assign variables
+	$header{'length'} = read16();
+	$header{'type'} = read16();
+	$header{'cookie'} = readraw( 8 );
+	$header{'encrypt'} = read16();
+	$header{'compress'} = read16();
+	$header{'totfiles'} = read16();
+	$header{'filesleft'} = read16();
+	$header{'totparts'} = read16();
+	$header{'partsleft'} = read16();
+	$header{'totsize'} = read32();
+	$header{'size'} = read32();
+	$header{'modtime'} = read32();
+	$header{'checksum'} = read32();
+	$header{'rfrcsum'} = read32();
+	$header{'rfsize'} = read32();
+	$header{'cretime'} = read32();
+	$header{'rfcsum'} = read32();
+	$header{'nrecvd'} = read32();
+	$header{'recvcsum'} = read32();
+	$header{'idstring'} = readraw( 32 );
+	$header{'flag'} = read8();
+	$header{'lnameoffset'} = read8();
+	$header{'lsizeoffset'} = read8();
+
+	# now a dummy part to fill in the header comes, so we skip it
+	$ofs += 69;
+	
+	$header{'macfileinfo'} = readraw(16);
+	$header{'nencode'} = read16();
+	$header{'nlanguage'} = read16();
+
+	return 1;
+}
+
+# 		print_header_info
+#
+# As the name implies this function simply prints out all the information found inside the 
+# header that could be of some value
+# This function assumes that the function read_header has been called previously to read in 
+# all the variables that are printed out here.
+#
+sub print_header_info
+{
+	my $s_type = '';
+	my $s_flag = '';
+
+	# remove \0 from variables
+	$header{'name'} =~ s/\0//g;
+	$header{'idstring'} =~ s/\0//g;
+	$header{'cookie'} =~ s/\0//g;
+	
+	# print information about file
+	print '------------------------------------------------------------',"\n";
+	print "Parsing OFT (Oscar File Transfer) header\n\n";
+	print "Name of file transferred: $header{'name'}\n";
+	print "\tFile is encrypted\n" if $header{'encrypt'};
+	print "\tFile is compressed\n" if $header{'compress'};
+	print "\tCookie value: $header{'cookie'}\n" if $header{'cookie'} ne '';
+	print "\tTotal number of files $header{'totfiles'}\n\tFiles left: $header{'filesleft'}\n\tTotal parts: $header{'totparts'}\n";
+	print "\tParts left: $header{'partsleft'}\n";
+	print "\tTotal size: $header{'totsize'}\n\tSize: $header{'size'}\n"; 
+	print "\tModtime: $header{'modtime'}\n" if $header{'modtime'} ne 0;
+	print "\tCreTime: $header{'cretime'}\n" if $header{'cretime'} ne 0;
+	print "\tChecksum: $header{'checksum'}\n";
+	print "\tID string '$header{'idstring'}'\n";
+
+	# examine the flags
+  	if (scalar keys %flags> 0) 
+	{
+		foreach my $i (keys %flags) 
+		{
+			if ( $header{'flag'} & $i )
+			{
+				$s_flag .= $flags{$i} . ', ';
+			}
+		}
+	}
+	
+	print "\tFlag: ", $s_flag, "\n" if $s_flag ne '';
+
+	# examine the type
+  	if (scalar keys %types > 0) 
+	{
+		foreach my $i (keys %types) 
+		{
+			if ( $header{'type'} & $i )
+			{
+				$s_type .= $types{$i} . ', ';
+			}
+		}
+	}
+
+	print "\tType: ", $s_type, "\n" if $s_type ne '';
+	print "\tName offset $header{'lnameoffset'}\n";
+	print '------------------------------------------------------------',"\n";
+}
+0;
+	
+	
+=pod
+
+=head1 NAME
+
+B<oftcat> - a simple script to read an OFT package and dump the content into a file 
+
+=head1 SYNOPSIS 
+
+B<oftcat> -r|--read OFT_FILE [-w|-write OUT_FILE] 
+
+B<oftcat>[ -v|--version] [-h|--help|-?] 
+
+=head1 OPTIONS
+
+=over 8
+
+=item B<-r|-read OFT_FILE>
+
+The OFT package that the script should read
+
+=item B<-w|-write FILE>
+
+Use this option to define an output file to dump the content of the OFT package into.  If this option is not defined, we will use the extracted file name instead 
+
+=item B<-v|-version>
+
+Dump the version number of the script to the screen and quit
+
+=item B<-h|-help|-?>
+
+Print this help menu
+
+=back
