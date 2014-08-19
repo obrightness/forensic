@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>page-type</key>
+  <dict>
+    <key>template-name</key><string>list</string>
+    <key>template-parameters</key>
+    <dict>
+    </dict>
+  </dict>
+  <key>title</key><string>Search Results</string>
+  <key>store-version</key><string>1.0</string>
+  <key>pings</key>
+  <array>
+    <string>http://metrics.apple.com/b/ss/applesuperglobal/1/G.6--NS?pccr=true&amp;ch=Movies-Search&amp;g=http%3A%2F%2Fax.search.itunes.apple.com%2FWebObjects%2FMZSearch.woa%2Fwa%2FincrementalSearch%3Fmedia%3Dmovie%26q%3Dik&amp;pageName=Movies-Search%20Hints-US&amp;v2=ik&amp;h5=appleitmsnatv%2Cappleitmsustv&amp;c2=ik</string>
+  </array>
+  <key>items</key>
+  <array>
+    <dict>
+      <key>type</key><string>collection</string>
+      <key>template-name</key><string>list</string>
+      <key>title</key><string>Search Results</string>
+      <key>template-parameters</key>
+      <dict>
+        <key>mediaType</key><string>Movies</string>
+      </dict>
+      <key>items</key>
+      <array>
+        <dict>
+          <key>type</key><string>separator</string>
+          <key>title</key><string>Actors &amp; Directors</string>
+        </dict>
+        <dict>
+          <key>type</key><string>link</string>
+          <key>title</key><string>Eme Ikwuakor</string>
+          <key>url</key><string>http://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/artistSearch?submit=edit&amp;id=340182498&amp;media=movie&amp;artistTerm=Eme%20Ikwuakor</string>
+          <key>url-page-type</key><string>list</string>
+        </dict>
+        <dict>
+          <key>type</key><string>link</string>
+          <key>title</key><string>Ike Barinholtz</string>
+          <key>url</key><string>http://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/artistSearch?submit=edit&amp;id=296047875&amp;media=movie&amp;artistTerm=Ike%20Barinholtz</string>
+          <key>url-page-type</key><string>list</string>
+        </dict>
+        <dict>
+          <key>type</key><string>link</string>
+          <key>title</key><string>Ike Eisenmann</string>
+          <key>url</key><string>http://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/artistSearch?submit=edit&amp;id=304955099&amp;media=movie&amp;artistTerm=Ike%20Eisenmann</string>
+          <key>url-page-type</key><string>list</string>
+        </dict>
+        <dict>
+          <key>type</key><string>link</string>
+          <key>title</key><string>Ikeda Shoko</string>
+          <key>url</key><string>http://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/artistSearch?submit=edit&amp;id=281766379&amp;media=movie&amp;artistTerm=Ikeda%20Shoko</string>
+          <key>url-page-type</key><string>list</string>
+        </dict>
+        <dict>
+          <key>type</key><string>link</string>
+          <key>title</key><string>Ikue Ootani</string>
+          <key>url</key><string>http://ax.search.itunes.apple.com/WebObjects/MZSearch.woa/wa/artistSearch?submit=edit&amp;id=299687583&amp;media=movie&amp;artistTerm=Ikue%20Ootani</string>
+          <key>url-page-type</key><string>list</string>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</dict>
+</plist>

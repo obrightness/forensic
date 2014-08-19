@@ -1,0 +1,40 @@
+GET /WebObjects/MZSearch.woa/wa/incrementalSearch?media=movie&q=sneb HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: ax.search.itunes.apple.com
+
+GET /WebObjects/MZSearch.woa/wa/incrementalSearch?media=movie&q=snea HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: ax.search.itunes.apple.com
+
+GET /WebObjects/MZSearch.woa/wa/incrementalSearch?media=movie&q=sneak HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: ax.search.itunes.apple.com
+
+GET /WebObjects/MZSearch.woa/wa/incrementalSearch?media=movie&q=i HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: ax.search.itunes.apple.com
+

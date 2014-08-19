@@ -1,0 +1,40 @@
+GET /b/ss/applesuperglobal/1/G.6--NS?pccr=true&ch=Movies-Search&g=http%3A%2F%2Fax.search.itunes.apple.com%2FWebObjects%2FMZSearch.woa%2Fwa%2FincrementalSearch%3Fmedia%3Dmovie%26q%3Dh&pageName=Movies-Search%20Hints-US&v2=h&h5=appleitmsnatv%2Cappleitmsustv&c2=h HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: metrics.apple.com
+
+GET /b/ss/applesuperglobal/1/G.6--NS?pccr=true&ch=Movies-Search&g=http%3A%2F%2Fax.search.itunes.apple.com%2FWebObjects%2FMZSearch.woa%2Fwa%2FincrementalSearch%3Fmedia%3Dmovie%26q%3Dha&pageName=Movies-Search%20Hints-US&v2=ha&h5=appleitmsnatv%2Cappleitmsustv&c2=ha HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: metrics.apple.com
+
+GET /b/ss/applesuperglobal/1/G.6--NS?pccr=true&ch=Movies-Search&g=http%3A%2F%2Fax.search.itunes.apple.com%2FWebObjects%2FMZSearch.woa%2Fwa%2FincrementalSearch%3Fmedia%3Dmovie%26q%3Dhac&pageName=Movies-Search%20Hints-US&v2=hac&h5=appleitmsnatv%2Cappleitmsustv&c2=hac HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: metrics.apple.com
+
+GET /b/ss/applesuperglobal/1/G.6--NS?pccr=true&ch=Movies-Search&g=http%3A%2F%2Fax.search.itunes.apple.com%2FWebObjects%2FMZSearch.woa%2Fwa%2FincrementalSearch%3Fmedia%3Dmovie%26q%3Dhack&pageName=Movies-Search%20Hints-US&v2=hack&h5=appleitmsnatv%2Cappleitmsustv&c2=hack HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: metrics.apple.com
+

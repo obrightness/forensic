@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>page-type</key>
+  <dict>
+    <key>template-name</key><string>item</string>
+    <key>template-parameters</key>
+    <dict>
+    </dict>
+  </dict>
+  <key>title</key><string>Sneakers</string>
+  <key>store-version</key><string>1.0</string>
+  <key>pings</key>
+  <array>
+    <string>http://metrics.apple.com/b/ss/applesuperglobal/1/G.6--NS?pageName=Movie%20Page-US-Sneakers-Phil%20Alden%20Robinson-283963264&amp;pccr=true&amp;h5=appleitmsnatv%2Cappleitmsustv&amp;ch=Movie%20Page&amp;g=http%3A%2F%2Fax.itunes.apple.com%2FWebObjects%2FMZStore.woa%2Fwa%2FviewMovie%3Fid%3D283963264%26s%3D143441</string>
+  </array>
+  <key>items</key>
+  <array>
+    <dict>
+      <key>type</key><string>movie</string>
+      <key>title</key><string>Sneakers</string>
+      <key>unmodified-title</key><string>Sneakers</string>
+      <key>item-id</key><integer>283963264</integer>
+      <key>url</key><string>http://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewMovie?id=283963264&amp;s=143441</string>
+      <key>release-date</key><date>1998-03-31T08:00:00Z</date>
+      <key>genre-name</key><string>Action &amp; Adventure</string>
+      <key>copyright</key><string>&#169; 2008 Universal Studios. All Rights Reserved.</string>
+      <key>artwork-urls</key>
+      <array>
+        <dict>
+          <key>box-height</key><integer>1000</integer>
+          <key>url</key><string>http://a1.phobos.apple.com/us/r1000/013/Music/ab/89/91/mzi.mndbzjie.enc.jpg?downloadKey2=1265341450_c424218767dba839ab1937b1fce2bd04</string>
+          <key>box-width</key><integer>1000</integer>
+        </dict>
+      </array>
+      <key>user-rating-count</key><integer>43</integer>
+      <key>average-user-rating</key><real>0.88</real>
+      <key>title2</key><string>43 Ratings</string>
+      <key>user-rating-count-string</key><string>43 Ratings</string>
+      <key>rating</key>
+      <dict>
+        <key>system</key><string>mpaa</string>
+        <key>rank</key><integer>300</integer>
+        <key>label</key><string>PG-13</string>
+        <key>description</key><string>for brief sexual references.</string>
+      </dict>
+      <key>store-offers</key>
+      <dict>
+        <key>STDQ</key>
+        <dict>
+          <key>action-params</key><string>productType=V&amp;salableAdamId=283963264&amp;pricingParameters=STDQ&amp;price=9990</string>
+          <key>action-display-name</key><string>Buy</string>
+          <key>buy-params</key><string>productType=V&amp;salableAdamId=283963264&amp;pricingParameters=STDQ&amp;price=9990</string>
+          <key>duration</key><integer>7518393</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>djl-enabled</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a1738.v.phobos.apple.com/us/r1000/011/Video/7f/9d/ce/mzm.gbctwnmq..640x352.h264lc.D2.p.m4v</string>
+          <key>preview-duration</key><real>164080.0</real>
+          <key>price</key><real>9.99000</real>
+          <key>price-display</key><string>$9.99</string>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1236583962</integer>
+        </dict>
+        <key>SDVOD</key>
+        <dict>
+          <key>action-display-name</key><string>Rent</string>
+          <key>duration</key><integer>7518393</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a1738.v.phobos.apple.com/us/r1000/011/Video/7f/9d/ce/mzm.gbctwnmq..640x352.h264lc.D2.p.m4v</string>
+          <key>preview-duration</key><real>164080.0</real>
+          <key>price</key><real>2.99000</real>
+          <key>rent-params</key><string>productType=V&amp;salableAdamId=283963264&amp;pricingParameters=SDVOD&amp;price=2990&amp;rental=1</string>
+          <key>rent-price-display</key><string>$2.99</string>
+          <key>rental-duration</key><integer>43200</integer>
+          <key>rental-playback-duration</key><integer>1440</integer>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1528822900</integer>
+        </dict>
+      </dict>
+      <key>flavors</key>
+      <dict>
+        <key>4:640x480LC-128</key>
+        <dict>
+          <key>action-params</key><string>productType=V&amp;salableAdamId=283963264&amp;pricingParameters=STDQ&amp;price=9990</string>
+          <key>action-display-name</key><string>Buy</string>
+          <key>buy-params</key><string>productType=V&amp;salableAdamId=283963264&amp;pricingParameters=STDQ&amp;price=9990</string>
+          <key>duration</key><integer>7518393</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>djl-enabled</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a1738.v.phobos.apple.com/us/r1000/011/Video/7f/9d/ce/mzm.gbctwnmq..640x352.h264lc.D2.p.m4v</string>
+          <key>preview-duration</key><real>164080.0</real>
+          <key>price</key><real>9.99000</real>
+          <key>price-display</key><string>$9.99</string>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1236583962</integer>
+        </dict>
+        <key>8:480p</key>
+        <dict>
+          <key>action-display-name</key><string>Rent</string>
+          <key>duration</key><integer>7518393</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a1738.v.phobos.apple.com/us/r1000/011/Video/7f/9d/ce/mzm.gbctwnmq..640x352.h264lc.D2.p.m4v</string>
+          <key>preview-duration</key><real>164080.0</real>
+          <key>price</key><real>2.99000</real>
+          <key>rent-params</key><string>productType=V&amp;salableAdamId=283963264&amp;pricingParameters=SDVOD&amp;price=2990&amp;rental=1</string>
+          <key>rent-price-display</key><string>$2.99</string>
+          <key>rental-duration</key><integer>43200</integer>
+          <key>rental-playback-duration</key><integer>1440</integer>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1528822900</integer>
+        </dict>
+      </dict>
+      <key>url-page-type</key><string>movie</string>
+      <key>thumbnail-artwork</key>
+      <dict>
+        <key>box-height</key><integer>170</integer>
+        <key>url</key><string>http://a1.phobos.apple.com/us/r1000/013/Music/ab/89/91/mzi.mndbzjie.170x170-75.jpg</string>
+        <key>box-width</key><integer>170</integer>
+      </dict>
+      <key>related-content</key><string>http://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/relatedItemsShelf?ct-id=3&amp;id=283963264&amp;storeFrontId=143441&amp;mt=6</string>
+      <key>description</key><string>Robert Redford leads an all-star cast in one of the most satisfying suspense films! Computer expert Martin Bishop (Redford) heads a team of renegade hackers - including a former CIA employee (Sidney Poitier), a gadgets wizard (Dan Aykroyd), a young genius (River Phoenix) and a blind soundman (David Strathairn) - who are routinely hired to test security systems. But Bishop&#39;s past comes back to haunt him when government agents blackmail the &#34;sneakers&#34; into carrying out a covert operation: tracking down an elusive black box. Along with his former girlfriend (Mary McDonnell), Bishop&#39;s team retrieves the box and makes a stunning discovery - the device can break into any computer system in the world. With factions from all sides willing to kill for the powerful box, Bishop and his team embark on their most dangerous assignment ever in this exhilarating high-tech caper from Phil Alden Robinson (Field of Dreams).</string>
+      <key>studio-name</key><string>Universal Pictures</string>
+      <key>credits</key>
+      <dict>
+        <key>producers</key>
+        <array>
+          <string>Lawrence Lasker</string>
+          <string>Lindsley Parsons Jr.</string>
+          <string>Walter F. Parkes</string>
+        </array>
+        <key>directors</key>
+        <array>
+          <string>Phil Alden Robinson</string>
+        </array>
+        <key>cast</key>
+        <array>
+          <string>Robert Redford</string>
+          <string>Dan Aykroyd</string>
+          <string>Ben Kingsley</string>
+          <string>Mary McDonnell</string>
+          <string>River Phoenix</string>
+          <string>Sidney Poitier</string>
+        </array>
+        <key>screenwriters</key>
+        <array>
+          <string>Phil Alden Robinson</string>
+          <string>Walter F. Parkes</string>
+          <string>Lawrence Lasker</string>
+        </array>
+      </dict>
+      <key>audio-formats</key>
+      <array>
+        <string>English</string>
+      </array>
+      <key>more-info</key>
+      <array>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Actors</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Robert Redford</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/robert-redford/id187699116</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Dan Aykroyd</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/dan-aykroyd/id4973865</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Ben Kingsley</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/ben-kingsley/id2798803</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Mary McDonnell</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/mary-mcdonnell/id283963267</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>River Phoenix</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/river-phoenix/id283963270</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Sidney Poitier</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/sidney-poitier/id213854865</string>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Director</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Phil Alden Robinson</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/phil-alden-robinson/id283963275</string>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Producers</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Lawrence Lasker</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/lawrence-lasker/id270230752</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Lindsley Parsons Jr.</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/lindsley-parsons-jr/id284531308</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Walter F. Parkes</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/walter-f-parkes/id294583002</string>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Screenwriters</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Phil Alden Robinson</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Walter F. Parkes</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/walter-f-parkes/id294583002</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Lawrence Lasker</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/lawrence-lasker/id270230752</string>
+            </dict>
+          </array>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</dict>
+</plist>

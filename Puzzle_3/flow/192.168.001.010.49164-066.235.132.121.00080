@@ -1,0 +1,10 @@
+GET /b/ss/applesuperglobal/1/G.6--NS?pageName=US-Movies-Movies-33&pccr=true&h5=appleitmsnatv%2Cappleitmsustv&ch=Movies%20main&g=http%3A%2F%2Fax.itunes.apple.com%2FWebObjects%2FMZStore.woa%2Fwa%2FviewGrouping%3Fid%3D39 HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: metrics.apple.com
+

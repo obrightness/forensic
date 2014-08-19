@@ -1,0 +1,107 @@
+----------------------------------------
+ Report: 64.12.102.142:587-192.168.1.159:1036
+----------------------------------------
+
+Found SMTP Session data
+----------------------------------------
+ Report: 192.168.1.159:1038-64.12.102.142:587
+----------------------------------------
+
+Found SMTP Session data
+SMTP AUTH Login: sneakyg33k@aol.com
+SMTP AUTH Password: 558r00lz
+SMTP MAIL FROM: <sneakyg33k@aol.com>
+SMTP RCPT TO: <mistersecretx@aol.com>
+Found email Messages
+ - Writing to file: ./report/messages/1/192.168.1.159:1038-64.12.102.142:587.msg
+ - MD5 of msg: 844661d8332eb00e537a8b15deedf269
+   - Found Attachment
+     - Writing to filename: ./report/messages/1/part-001.ksh 
+     - Type of Attachement: text/plain
+     - MDS of Attachement: ba2c98f65f3f678b6a71570adcf362f4
+   - Found Attachment
+     - Writing to filename: ./report/messages/1/part-001.html 
+     - Type of Attachement: text/html
+     - MDS of Attachement: d07c3b721fed36a725c01e4827c1a563
+   - Found Attachment
+     - Writing to filename: ./report/messages/1/secretrendezvous.docx 
+     - Type of Attachement: application/octet-stream
+     - MDS of Attachement: 9e423e11db88f01bbff81172839e1923
+       - ZIP Archive attachment extracting
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/[Content_Types].xml
+           - Type of file: application/xml
+           - MDS of File: f7a7f13f9d124fcc3527e57f342a0979
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/_rels/.rels
+           - Type of file: None
+           - MDS of File: 77bf61733a633ea617a4db76ef769a4d
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/_rels/document.xml.rels
+           - Type of file: None
+           - MDS of File: c9c49c2d0f5b9a5ce63d1e0d86bb5e25
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/document.xml
+           - Type of file: application/xml
+           - MDS of File: 5b1a947f30db83f4170b009dedd38fab
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/media/image1.png
+           - Type of file: image/png
+           - MDS of File: aadeace50997b1ba24b09ac2ef1940b7
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/theme/theme1.xml
+           - Type of file: application/xml
+           - MDS of File: 9d84374caf9c73ec77677afd23cb7b22
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/settings.xml
+           - Type of file: application/xml
+           - MDS of File: 4788c0aa840fb18d7e5bd74936317dcc
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/webSettings.xml
+           - Type of file: application/xml
+           - MDS of File: 15065d2de3eddbb09d84337a09fd7985
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/styles.xml
+           - Type of file: application/xml
+           - MDS of File: d0c2c9bec6e9c2597b174ababf1b2191
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/docProps/core.xml
+           - Type of file: application/xml
+           - MDS of File: 32ecd3799f69751a53ce10825372fd36
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/numbering.xml
+           - Type of file: application/xml
+           - MDS of File: 5583fc19ed6bdf4ee5402f32ef42c492
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/word/fontTable.xml
+           - Type of file: application/xml
+           - MDS of File: de2ae9c06e07370391b996f069f1dfba
+         - Found file
+           - Writing to filename: ./report/messages/1/secretrendezvous.docx.unzipped/docProps/app.xml
+           - Type of file: application/xml
+           - MDS of File: b3923a08674ac7c56babca89c3409107
+----------------------------------------
+ Report: 192.168.1.159:1036-64.12.102.142:587
+----------------------------------------
+
+Found SMTP Session data
+SMTP AUTH Login: sneakyg33k@aol.com
+SMTP AUTH Password: 558r00lz
+SMTP MAIL FROM: <sneakyg33k@aol.com>
+SMTP RCPT TO: <sec558@gmail.com>
+Found email Messages
+ - Writing to file: ./report/messages/2/192.168.1.159:1036-64.12.102.142:587.msg
+ - MD5 of msg: e295a3990b3987a8864383832fea6df9
+   - Found Attachment
+     - Writing to filename: ./report/messages/2/part-001.ksh 
+     - Type of Attachement: text/plain
+     - MDS of Attachement: 541812ed71a51b9c1ae07741ed5ae63c
+   - Found Attachment
+     - Writing to filename: ./report/messages/2/part-001.html 
+     - Type of Attachement: text/html
+     - MDS of Attachement: 18d3f88dbc6b152aba923e8c083033f9
+----------------------------------------
+ Report: 64.12.102.142:587-192.168.1.159:1038
+----------------------------------------
+
+Found SMTP Session data

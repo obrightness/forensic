@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>page-type</key>
+  <dict>
+    <key>template-name</key><string>item</string>
+    <key>template-parameters</key>
+    <dict>
+    </dict>
+  </dict>
+  <key>title</key><string>Hackers</string>
+  <key>store-version</key><string>1.0</string>
+  <key>pings</key>
+  <array>
+    <string>http://metrics.apple.com/b/ss/applesuperglobal/1/G.6--NS?pageName=Movie%20Page-US-Hackers-Iain%20Softley-333441649&amp;pccr=true&amp;h5=appleitmsnatv%2Cappleitmsustv&amp;ch=Movie%20Page&amp;g=http%3A%2F%2Fax.itunes.apple.com%2FWebObjects%2FMZStore.woa%2Fwa%2FviewMovie%3Fid%3D333441649%26s%3D143441</string>
+  </array>
+  <key>items</key>
+  <array>
+    <dict>
+      <key>type</key><string>movie</string>
+      <key>title</key><string>Hackers</string>
+      <key>unmodified-title</key><string>Hackers</string>
+      <key>item-id</key><integer>333441649</integer>
+      <key>url</key><string>http://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewMovie?id=333441649&amp;s=143441</string>
+      <key>release-date</key><date>1998-08-25T07:00:00Z</date>
+      <key>genre-name</key><string>Drama</string>
+      <key>copyright</key><string>&#169; 1995 UNITED ARTISTS PICTURES INC. ALL RIGHTS RESERVED.</string>
+      <key>artwork-urls</key>
+      <array>
+        <dict>
+          <key>box-height</key><integer>1000</integer>
+          <key>url</key><string>http://a1.phobos.apple.com/us/r1000/032/Video/f0/48/dd/mzi.pizbdeal.enc.jpg?downloadKey2=1265245618_f3a714a27ea9388f7c07104353e1d763</string>
+          <key>box-width</key><integer>1000</integer>
+        </dict>
+      </array>
+      <key>user-rating-count</key><integer>22</integer>
+      <key>average-user-rating</key><real>0.95</real>
+      <key>title2</key><string>22 Ratings</string>
+      <key>user-rating-count-string</key><string>22 Ratings</string>
+      <key>rating</key>
+      <dict>
+        <key>system</key><string>mpaa</string>
+        <key>rank</key><integer>600</integer>
+        <key>label</key><string>Unrated</string>
+        <key>description</key><string></string>
+      </dict>
+      <key>store-offers</key>
+      <dict>
+        <key>STDQ</key>
+        <dict>
+          <key>action-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=STDQ&amp;price=4990</string>
+          <key>action-display-name</key><string>Buy</string>
+          <key>buy-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=STDQ&amp;price=4990</string>
+          <key>duration</key><integer>6320737</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>djl-enabled</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a227.v.phobos.apple.com/us/r1000/008/Video/62/bd/1b/mzm.plqacyqb..640x278.h264lc.d2.p.m4v</string>
+          <key>preview-duration</key><real>151609.0</real>
+          <key>price</key><real>4.99000</real>
+          <key>price-display</key><string>$4.99</string>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1265658010</integer>
+        </dict>
+        <key>SDVOD</key>
+        <dict>
+          <key>action-display-name</key><string>Rent</string>
+          <key>duration</key><integer>6320737</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a227.v.phobos.apple.com/us/r1000/008/Video/62/bd/1b/mzm.plqacyqb..640x278.h264lc.d2.p.m4v</string>
+          <key>preview-duration</key><real>151609.0</real>
+          <key>price</key><real>2.99000</real>
+          <key>rent-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=SDVOD&amp;price=2990&amp;rental=1</string>
+          <key>rent-price-display</key><string>$2.99</string>
+          <key>rental-duration</key><integer>43200</integer>
+          <key>rental-playback-duration</key><integer>1440</integer>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1353118549</integer>
+        </dict>
+        <key>HDVOD</key>
+        <dict>
+          <key>action-display-name</key><string>Rent</string>
+          <key>duration</key><integer>6320737</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a227.v.phobos.apple.com/us/r1000/008/Video/62/bd/1b/mzm.plqacyqb..640x278.h264lc.d2.p.m4v</string>
+          <key>preview-duration</key><real>151609.0</real>
+          <key>price</key><real>3.99000</real>
+          <key>rent-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=HDVOD&amp;price=3990&amp;rental=1</string>
+          <key>rent-price-display</key><string>$3.99</string>
+          <key>rental-duration</key><integer>43200</integer>
+          <key>rental-playback-duration</key><integer>1440</integer>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>3266589199</integer>
+        </dict>
+      </dict>
+      <key>flavors</key>
+      <dict>
+        <key>4:640x480LC-128</key>
+        <dict>
+          <key>action-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=STDQ&amp;price=4990</string>
+          <key>action-display-name</key><string>Buy</string>
+          <key>buy-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=STDQ&amp;price=4990</string>
+          <key>duration</key><integer>6320737</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>djl-enabled</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a227.v.phobos.apple.com/us/r1000/008/Video/62/bd/1b/mzm.plqacyqb..640x278.h264lc.d2.p.m4v</string>
+          <key>preview-duration</key><real>151609.0</real>
+          <key>price</key><real>4.99000</real>
+          <key>price-display</key><string>$4.99</string>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1265658010</integer>
+        </dict>
+        <key>8:480p</key>
+        <dict>
+          <key>action-display-name</key><string>Rent</string>
+          <key>duration</key><integer>6320737</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a227.v.phobos.apple.com/us/r1000/008/Video/62/bd/1b/mzm.plqacyqb..640x278.h264lc.d2.p.m4v</string>
+          <key>preview-duration</key><real>151609.0</real>
+          <key>price</key><real>2.99000</real>
+          <key>rent-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=SDVOD&amp;price=2990&amp;rental=1</string>
+          <key>rent-price-display</key><string>$2.99</string>
+          <key>rental-duration</key><integer>43200</integer>
+          <key>rental-playback-duration</key><integer>1440</integer>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>1353118549</integer>
+        </dict>
+        <key>7:720p</key>
+        <dict>
+          <key>action-display-name</key><string>Rent</string>
+          <key>duration</key><integer>6320737</integer>
+          <key>close-captioned</key><false/>
+          <key>dolby-digital</key><false/>
+          <key>has-additional-content</key><false/>
+          <key>preview-url</key><string>http://a227.v.phobos.apple.com/us/r1000/008/Video/62/bd/1b/mzm.plqacyqb..640x278.h264lc.d2.p.m4v</string>
+          <key>preview-duration</key><real>151609.0</real>
+          <key>price</key><real>3.99000</real>
+          <key>rent-params</key><string>productType=V&amp;salableAdamId=333441649&amp;pricingParameters=HDVOD&amp;price=3990&amp;rental=1</string>
+          <key>rent-price-display</key><string>$3.99</string>
+          <key>rental-duration</key><integer>43200</integer>
+          <key>rental-playback-duration</key><integer>1440</integer>
+          <key>screen-format</key><string>widescreen</string>
+          <key>size</key><integer>3266589199</integer>
+        </dict>
+      </dict>
+      <key>url-page-type</key><string>movie</string>
+      <key>thumbnail-artwork</key>
+      <dict>
+        <key>box-height</key><integer>170</integer>
+        <key>url</key><string>http://a1.phobos.apple.com/us/r1000/032/Video/f0/48/dd/mzi.pizbdeal.170x170-75.jpg</string>
+        <key>box-width</key><integer>170</integer>
+      </dict>
+      <key>related-content</key><string>http://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/relatedItemsShelf?ct-id=3&amp;id=333441649&amp;storeFrontId=143441&amp;mt=6</string>
+      <key>description</key><string>Cereal Killer, Phantom Phreak, Crash Override...if these handles appear on your computer screen, you&#39;re beyond saving--consider yourself hacked. In this cyberpunk thriller, a renegade group of elite teenage computer hackers rollerblade through New York City by day and ride the information highway by night. After hacking into a high-stakes industrial conspiracy, they become prime suspects and must recruit the best of the cybernet underground to help clear their names.</string>
+      <key>studio-name</key><string>MGM</string>
+      <key>credits</key>
+      <dict>
+        <key>producers</key>
+        <array>
+          <string>Michael Peyser</string>
+          <string>Ralph Winter</string>
+        </array>
+        <key>directors</key>
+        <array>
+          <string>Iain Softley</string>
+        </array>
+        <key>cast</key>
+        <array>
+          <string>Jonny Lee Miller</string>
+          <string>Angelina Jolie</string>
+          <string>Jesse Bradford</string>
+          <string>Matthew Lillard</string>
+          <string>Laurence Mason</string>
+        </array>
+      </dict>
+      <key>audio-formats</key>
+      <array>
+        <string>English</string>
+      </array>
+      <key>more-info</key>
+      <array>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Actors</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Jonny Lee Miller</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/jonny-lee-miller/id288861359</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Angelina Jolie</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/angelina-jolie/id188702730</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Jesse Bradford</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/jesse-bradford/id208785324</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Matthew Lillard</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/matthew-lillard/id208631212</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Laurence Mason</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/laurence-mason/id333441651</string>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Director</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Iain Softley</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/iain-softley/id283740313</string>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>type</key><string>more-info-section</string>
+          <key>section-title</key><string>Producers</string>
+          <key>items</key>
+          <array>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Michael Peyser</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/michael-peyser/id333441658</string>
+            </dict>
+            <dict>
+              <key>type</key><string>more-info-section-item</string>
+              <key>item-title</key><string>Ralph Winter</string>
+              <key>item-url</key><string>http://ax.itunes.apple.com/us/artist/ralph-winter/id273697675</string>
+            </dict>
+          </array>
+        </dict>
+      </array>
+    </dict>
+  </array>
+</dict>
+</plist>

@@ -1,0 +1,1 @@
+Hi sweetheart! Bring your fake passport and a bathing suit. Address attached. love, Ann

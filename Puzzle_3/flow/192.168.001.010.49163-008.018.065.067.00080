@@ -1,0 +1,11 @@
+GET /WebObjects/MZStore.woa/wa/viewGrouping?id=39 HTTP/1.1
+Accept: */*
+Accept-Language: en
+Accept-Encoding: gzip, deflate
+Cookie: s_vi=[CS]v1|259C176A85010C29-6000010D80115D7F[CE]
+User-Agent: AppleTV/2.4
+If-Modified-Since: Fri, 25 Dec 2009 04:42:31 GMT
+X-Apple-Store-Front: 143441-1,3
+Connection: keep-alive
+Host: ax.itunes.apple.com
+
